@@ -96,28 +96,33 @@
             align-items: center;
             margin: 10px 0;
         }
-    @media (max-width: 768px) {
+    @media (min-width: 769px) {
+            .window#openingWindow, .window.right {
+                display: block; /* Show the 'kalista.exe' and 'currentProjects.txt' windows */
+            }
+            .image-grid {
+                display: none; /* Hide the icon grid on desktop */
+            }
+        }
+        /* Mobile styles (for screens up to 768px) */
+        @media (max-width: 768px) {
             .window#openingWindow, .window.right {
                 display: none; /* Hide the 'kalista.exe' and 'currentProjects.txt' windows on mobile */
             }
-
             .image-grid {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 margin-top: 20px;
             }
-
             .column {
-                width: 45%;
-                margin: 10px;
+                width: 50%; /* Set each column to take 50% width */
                 text-align: center;
             }
-
             .column img {
                 width: 100px;
                 height: 100px;
-                margin-bottom: 10px;
+                margin: 10px; /* Add margin between images */
             }
         }
     </style>
