@@ -96,7 +96,19 @@
             align-items: center;
             margin: 10px 0;
         }
-    @media (max-width: 768px) {
+  
+ @media (min-width: 769px) {
+            .window#openingWindow, .window.right {
+                display: block; /* Show the 'kalista.exe' and 'currentProjects.txt' windows */
+            }
+
+            .image-grid {
+                display: none; /* Hide the icon grid on desktop */
+            }
+        }
+
+        /* Mobile styles (for screens up to 768px) */
+        @media (max-width: 768px) {
             .window#openingWindow, .window.right {
                 display: none; /* Hide the 'kalista.exe' and 'currentProjects.txt' windows on mobile */
             }
@@ -109,17 +121,17 @@
             }
 
             .column {
-                width: 45%;
-                margin: 10px;
+                width: 50%; /* Set each column to take 50% width */
                 text-align: center;
             }
 
             .column img {
                 width: 100px;
                 height: 100px;
-                margin-bottom: 10px;
+                margin: 10px; /* Add margin between images */
             }
         }
+
     </style>
     <script>
         function playHonk() {
@@ -226,7 +238,6 @@
                 <h3>Kalista is working on....</h3>
                 <ul>
                   <li>A site rebuild for Next Level Impacts</li>
-                <button onclick="window.location.href='https://www.nextlevelimpacts.com/', '_blank' " class="my-button" >Check it out!</button> 
                     <li>A Margaritaville Dungeons and Dragons campaign</li>
                     <li>A dice tower themed set of modular drawers</li>
                     <li>An AI video ATS software</li>
