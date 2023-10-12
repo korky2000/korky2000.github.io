@@ -99,29 +99,26 @@
 /* Desktop styles (for screens wider than 768px) */
 @media (min-width: 769px) {
     .window#openingWindow, .window.right {
-        display: block; /* Show the 'kalista.exe' and 'currentProjects.txt' windows */
+        display: block; /* Show the 'kalista.exe' and 'currentProjects.txt' windows on desktop */
     }
 
     .image-grid {
         display: flex;
-        flex-direction: column; /* Align icons in a column on desktop */
-        justify-content: flex-start; /* Align icons to the top */
-        align-items: flex-start; /* Align icons to the left */
+        flex-wrap: wrap;
+        justify-content: flex-start; /* Align icons to the left on desktop */
+        align-items: flex-start;
         margin-top: 20px;
     }
 
     .column {
-        display: flex;
-        flex-direction: row; /* Align icons in a row on desktop */
-        justify-content: flex-start;
-        align-items: center;
-        margin: 10px 0;
+        width: 50%; /* Set each column to take 50% width */
+        text-align: center;
     }
 
     .column img {
-        margin: 5px;
-        max-width: 100%;
-        height: auto;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
     }
 }
 
@@ -134,12 +131,12 @@
     .image-grid {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around; /* Align icons with space around in two columns on mobile */
         margin-top: 20px;
     }
 
     .column {
-        width: 50%;
+        width: 45%; /* Set each column to take 45% width to allow space between icons */
         text-align: center;
         margin: 10px;
     }
@@ -150,6 +147,7 @@
         margin: 10px;
     }
 }
+
 
     </style>
     <script>
