@@ -96,20 +96,9 @@
             align-items: center;
             margin: 10px 0;
         }
- @media (min-width: 769px) {
-            .window.right {
-                display: none; /* Hide the 'currentProjects.txt' window */
-            }
-        }
-
-        /* Mobile styles (for screens up to 768px) */
-        @media (max-width: 768px) {
-            .window.right {
-                display: block; /* Display the 'currentProjects.txt' window */
-            }
-
-            .window#openingWindow {
-                display: none; /* Hide the 'kalista.exe' window */
+   @media (max-width: 768px) {
+            .window {
+                display: none; /* Hide all windows on mobile */
             }
 
             .image-grid {
