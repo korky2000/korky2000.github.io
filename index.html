@@ -96,21 +96,23 @@
             align-items: center;
             margin: 10px 0;
         }
-   @media (min-width: 769px) {
+/* Desktop styles (for screens wider than 768px) */
+@media (min-width: 769px) {
     .window#openingWindow, .window.right {
         display: block; /* Show the 'kalista.exe' and 'currentProjects.txt' windows */
     }
 
     .image-grid {
         display: flex;
-        flex-wrap: wrap; /* Wrap the icons into multiple lines if they exceed container width */
-        justify-content: center;
+        flex-direction: column; /* Align icons in a column on desktop */
+        justify-content: flex-start; /* Align icons to the top */
+        align-items: flex-start; /* Align icons to the left */
         margin-top: 20px;
     }
 
     .column {
         display: flex;
-        flex-direction: column;
+        flex-direction: row; /* Align icons in a row on desktop */
         justify-content: flex-start;
         align-items: center;
         margin: 10px 0;
@@ -148,6 +150,7 @@
         margin: 10px;
     }
 }
+
     </style>
     <script>
         function playHonk() {
