@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>kalista's portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Windows XP Theme (include only one theme at a time) -->
+    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
+
+    <style>
+        a:active {
+            box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5); /* Add a drop shadow effect */
+        }
+        .my-div {
+            text-align: center;
+        }
+
+        .my-button {
+            display: block;
+            margin: 20px auto;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+        }
+        .containerShop {
+            text-align: center;
+        }
+
+        
+        .shopButton {
+            display: block;
+            margin: 20px auto 0;
+        }
+        .right {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        #openingWindow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .plzcenter {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .outer-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .badCSS {
+            background-color: black;
+            width: 500px;
+            height: 450px;
+            color: white;
+        }
+
+      body {
+    background-image: url("https://raw.githubusercontent.com/korky2000/korky2000.github.io/main/backgroundImage.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* align the items to the left */
+            align-items: center;
+            margin: 10px 0;
+        }
+
+            .column img {
+                margin: 5px; /* to add some spacing between images */
+                max-width: 100%; /* to ensure that images are not stretched beyond their original dimensions */
+                height: auto; /* to preserve the aspect ratio of the images */
+            }
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start; /* align the items to the left */
+            align-items: center;
+            margin: 10px 0;
+        }
+  
+ @media (min-width: 769px) {
+            .window#openingWindow, .window.right {
+                display: block; /* Show the 'kalista.exe' and 'currentProjects.txt' windows */
+            }
+
+            .image-grid {
+                display: none; /* Hide the icon grid on desktop */
+            }
+        }
+
+        /* Mobile styles (for screens up to 768px) */
+        @media (max-width: 768px) {
+            .window#openingWindow, .window.right {
+                display: none; /* Hide the 'kalista.exe' and 'currentProjects.txt' windows on mobile */
+            }
+
+            .image-grid {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 20px;
+            }
+
+            .column {
+                width: 50%; /* Set each column to take 50% width */
+                text-align: center;
+            }
+
+            .column img {
+                width: 100px;
+                height: 100px;
+                margin: 10px; /* Add margin between images */
+            }
+        }
+
+    </style>
+    <script>
+        function playHonk() {
+            var honkAudio = document.getElementById("honk-audio");
+            honkAudio.play();
+            alert("You got honked bucko!");
+        }</script>
+
+</head>
+
+<body>
+    <div class="image-grid">
+        <div class="column">
+
+
+            <a href="kalistaPortfolioFix.pdf" target="_blank">
+
+                <img src="https://raw.githubusercontent.com/korky2000/korky2000.github.io/main/crtPortfolioIcon.png" style="width:70px;height:70px;">
+            </a>
+            <a href="https://www.youtube.com/watch?v=xXeW-JE7iLA&t=1296s" target="_blank">
+                <img src="https://raw.githubusercontent.com/korky2000/korky2000.github.io/main/tierItUp.png" style="width:70px;height:70px;">
+            </a>
+            <a href="ShieldsRobotics.pdf" target="_blank">
+
+                <img src="https://raw.githubusercontent.com/korky2000/korky2000.github.io/main/resume.png" style="width:70px;height:70px;">
+            </a>
+
+            <a href="aboutMe.html" target="_blank">
+
+                <img src="https://raw.githubusercontent.com/korky2000/korky2000.github.io/main/aboutMe.png" style="width:70px;height:70px;">
+            </a>
+            <a href="cosplAIDDocumentation.pdf" target="_blank">
+                <img src="https://raw.githubusercontent.com/korky2000/korky2000.github.io/main/research.png" style="width:70px;height:70px;">
+            </a>
+
+            <a href="https://www.thingiverse.com/korky2000/designs" target="_blank">
+                <img src="https://raw.githubusercontent.com/korky2000/korky2000.github.io/main/thingiverse.png" style="width:70px;height:70px;">
+            </a>
+        </div>
+        <div class="column">
+
+            <a href="https://github.com/korky2000" target="_blank">
+
+                <img src="https://raw.githubusercontent.com/korky2000/korky2000.github.io/main/github.png" style="width:70px;height:70px;">
+            </a>
+            <a href="https://drive.google.com/drive/folders/1Rqam1oPPkSYgGM5q4qJdwI3-8GbskUDm?usp=sharing" target="_blank">
+                <img src="https://raw.githubusercontent.com/korky2000/korky2000.github.io/main/speeches.png" style="width:70px;height:70px;">
+            </a>
+            <a href="https://drive.google.com/drive/folders/1KLqlyCkGZbk8T4op4nDlvjNpTIFV-9vy?usp=sharing" target="_blank">
+
+                <img src="https://raw.githubusercontent.com/korky2000/korky2000.github.io/main/scripts.png" style="width:70px;height:70px;">
+            </a>
+
+            <a href="https://drive.google.com/file/d/1pRGoXZm1DFHojWKvaN60QeQ_iweK8DG9/view?usp=share_link" target="_blank">
+                <img src="https://raw.githubusercontent.com/korky2000/korky2000.github.io/main/shortFilm.png" style="width:70px;height:70px;">
+            </a>
+            <a href="https://www.youtube.com/watch?v=XWrV_W__vXc" target="_blank">
+                <img src="https://raw.githubusercontent.com/korky2000/korky2000.github.io/main/symposium.png" style="width:70px;height:70px;">
+            </a>
+
+            <a href="https://socialblade.com/instagram/user/bc_listen" target="_blank">
+                <img src="https://raw.githubusercontent.com/korky2000/korky2000.github.io/main/socialMedia.png" style="width:70px;height:70px;">
+            </a>
+        </div>
+    </div>
+    <div class="window" id="openingWindow" style="margin: 32px; width: 550px; height:500px;">
+        <div class="title-bar">
+            <div class="title-bar-text">
+                kalista.exe
+            </div>
+        </div>
+        <div class="window-body outer-div">
+            <div class="badCSS">
+                <img src="https://raw.githubusercontent.com/korky2000/korky2000.github.io/main/kalistaHeader.gif" alt="Description of your GIF" style="max-width: 100%; height: auto;">
+
+                <h3 style=" text-align: center; font-family: Papyrus; ">Hello and welcome to my portfolio</h3>
+                <h4 style=" text-align: center; font-family: Comic sans MS; ">What is this?</h4>
+                <ol style="font-family: Courier New, Courier, monospace;">
+                    <li>A portfolio to hold all of my creative works</li>
+                    <li>A fun creative project</li>
+                    <li>A love letter to WindowsXP and web 1.0</li>
+                    <li>A way to show off my webdev skills</li>
+                </ol>
+                <h4 style=" text-align: center; ">Click on the icons to see different aspects of my portfolio</h4>
+                <button onclick="playHonk()" class="plzcenter" style="margin-top:10px;">Click this for more!</button>
+                <audio id="honk-audio">
+                    <source src="honk.mp3" type="audio/mpeg">
+                    <source src="honk.ogg" type="audio/ogg">
+
+                </audio>
+                </br>
+
+            </div>
+        </div>
+    </div>
+    <div class="window right" style="margin: 32px; width: 350px; height:500px;">
+        <div class="title-bar">
+            <div class="title-bar-text">
+                currentProjects.txt
+            </div>
+        </div>
+        <div class="window-body outer-div containerShop">
+            <div class="my-div">
+                <h3>Kalista is working on....</h3>
+                <ul>
+                  <li>A site rebuild for Next Level Impacts</li>
+                    <li>A Margaritaville Dungeons and Dragons campaign</li>
+                    <li>A dice tower themed set of modular drawers</li>
+                    <li>An AI video ATS software</li>
+                    <li>Making pickles</li>
+
+                </ul>
+               
+
+            </div>
+       
+        </div>
+        </div>
+</body>
+</html> 
