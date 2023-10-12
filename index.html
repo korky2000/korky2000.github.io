@@ -96,19 +96,7 @@
             align-items: center;
             margin: 10px 0;
         }
-  
- @media (min-width: 769px) {
-            .window#openingWindow, .window.right {
-                display: block; /* Show the 'kalista.exe' and 'currentProjects.txt' windows */
-            }
-
-            .image-grid {
-                display: none; /* Hide the icon grid on desktop */
-            }
-        }
-
-        /* Mobile styles (for screens up to 768px) */
-        @media (max-width: 768px) {
+    @media (max-width: 768px) {
             .window#openingWindow, .window.right {
                 display: none; /* Hide the 'kalista.exe' and 'currentProjects.txt' windows on mobile */
             }
@@ -121,17 +109,17 @@
             }
 
             .column {
-                width: 50%; /* Set each column to take 50% width */
+                width: 45%;
+                margin: 10px;
                 text-align: center;
             }
 
             .column img {
                 width: 100px;
                 height: 100px;
-                margin: 10px; /* Add margin between images */
+                margin-bottom: 10px;
             }
         }
-
     </style>
     <script>
         function playHonk() {
@@ -251,4 +239,4 @@
         </div>
         </div>
 </body>
-</html> 
+</html>
