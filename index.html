@@ -97,62 +97,93 @@
             margin: 10px 0;
         }
 
-     @media (max-width: 768px) {
-    .image-grid {
-        flex-direction: column;
+   @media (max-width: 768px) {
+    .window {
+        width: 90%;
     }
 
     .column {
-        width: 100%;
-        text-align: center;
-        margin: 2% 0;
-    }
-
-    .window {
         width: 90%;
-        margin: 4% auto;
     }
+       body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
 
-    .badCSS {
-        width: 90%;
-        height: 30vw;
-    }
+.window {
+    width: 90%;
+    margin: 4% auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
 
-    .my-div {
-        margin: 2%;
-    }
+.title-bar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
 
-    .my-button,
-    .shopButton {
-        margin: 2% auto;
-        padding: 2%;
-        font-size: 1em;
-    }
+.window-body {
+    padding: 20px;
+}
 
-    .outer-div {
-        flex-direction: column;
-    }
+.outer-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
-    .containerShop {
-        text-align: center;
-    }
+.badCSS {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
 
-    .right {
-        position: static;
-        margin-top: 4%;
-    }
+.badCSS img {
+    width: 100%;
+    height: auto;
+}
 
-    .plzcenter {
-        margin-top: 2%;
-    }
+.plzcenter {
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-    .title-bar-text {
-        font-size: 1.2em;
-    }
+.plzcenter:hover {
+    background-color: #45a049;
+}
 
-    .window-body {
-        padding: 2em;
-    }
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.column {
+    width: 45%;
+    margin: 10px;
+    text-align: center;
+}
+
+.column img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+}
 }
     </style>
     <script>
