@@ -96,9 +96,9 @@
             align-items: center;
             margin: 10px 0;
         }
-   @media (max-width: 768px) {
-            .window {
-                display: none; /* Hide all windows on mobile */
+    @media (max-width: 768px) {
+            .window#openingWindow, .window.right {
+                display: none; /* Hide the 'kalista.exe' and 'currentProjects.txt' windows on mobile */
             }
 
             .image-grid {
@@ -115,8 +115,8 @@
             }
 
             .column img {
-                width: 70px;
-                height: 70px;
+                width: 100px;
+                height: 100px;
                 margin-bottom: 10px;
             }
         }
