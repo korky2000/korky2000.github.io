@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>about me</title>
+    <meta charset="UTF-8" />
+
+    <!-- Windows XP Theme (include only one theme at a time) -->
+    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
+<style>
+    body {
+        background-image: url("backgroundImage.jpeg");
+    }
+    .plzcenter {
+        position: absolute;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+    }
+    .badCSS {
+        background-image: url("aboutMeBG.png");
+        width: 500px;
+        height: 450px;
+        color: white; 
+        text-shadow: 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000; 
+    }
+    .outer-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    ul {
+        font-size: 1.2em; 
+    }
+    .right {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+</style>
+</head>
+
+<body>
+    <div class="window plzcenter" style="margin: 32px; width: 600px; height:500px;">
+        <div class="title-bar">
+            <div class="title-bar-text">
+                aboutMe.exe
+            </div>
+        </div>
+        <div class="window-body outer-div">
+            <div class="badCSS">
+                <img src="aboutKalista.png" alt="Description of your GIF" style="max-width: 100%; height: auto;">
+                <h3 style=" text-align: center; font-family: Papyrus; ">Hello! My name is Kalista</h3>
+                <h4 style=" text-align: center; font-family: Comic sans MS; ">Here are some fun facts about me</h4>
+                <ul style="font-family: Comic sans MS;">
+                    <li>I am a Creative Technologies major from Saint Petersburg, FL</li>
+                    <li>I helped build berry.edu my freshman year of college and now maintain the site</li>
+                    <li>I love baseball and my favorite team is the Tampa Bay Rays</li>
+                    <li>I am on the Berry College Forensics Team! </li>
+                    <ul>
+                        <li>I recently won state championships in Impromptu Speaking and Communication Analysis</li>
+                        <li>I also have a national championship in IPDA debate</li>
+                    </ul>
+                    <li>I am Cuban and Greek! I love cooking foods from both of my cultures</li>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="window right" style="margin: 32px; width: 350px; height:400px;">
+        <div class="title-bar">
+            <div class="title-bar-text">
+                kalistaImage.jpeg
+            </div>
+        </div>
+        <div class="window-body outer-div containerShop">
+            <div class="my-div">
+                <img src="image1.png" alt="Example Image" style="width:300px;height:350px;">
+            </div>
+
+        </div>
+    </div>
+    <div class="window left" style="margin: 32px; width: 350px; height:400px;">
+        <div class="title-bar">
+            <div class="title-bar-text">
+skills.txt
+            </div>
+        </div>
+        <div class="window-body outer-div containerShop">
+            <div class="my-div">
+                <h3>Here are some skills I have</h3>
+                <ul>
+                    <li>Web Development skills such as</li>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>PHP</li>
+                        <li>Javascript</li>
+                    </ul>
+                    <li>C++</li>
+                    <li>Fusion360</li>
+                    <li>Processing</li>
+                    <li>Java</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe Premiere Pro</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

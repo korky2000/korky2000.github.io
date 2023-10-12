@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>XP.css example</title>
+    <meta charset="UTF-8" />
+
+    <!-- Windows XP Theme (include only one theme at a time) -->
+    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
+
+    <style>
+        #openingWindow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .plzcenter {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .outer-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .badCSS {
+            background-color: black;
+            width: 500px;
+            height: 450px;
+            color: white;
+        }
+
+        body {
+            background-image: url("kalistaPortfolio/backgroundImage.jpeg");
+        }
+    </style>
+    <script>
+        function playHonk() {
+            var honkAudio = document.getElementById("honk-audio");
+            honkAudio.play();
+            alert("You got honked!");
+        }</script>
+
+</head>
+
+<body>
+    <a href="kalistaPortfolio/kalistaPortfolioFix.pdf" target="_blank">
+        <img src="kalistaPortfolio/crtPortfolioIcon.png" style="width:70px;height:70px;">
+    </a>
+        <div class="window" id="openingWindow" style="margin: 32px; width: 550px; height:500px;">
+            <div class="title-bar">
+                <div class="title-bar-text">
+                    kalista.exe
+                </div>
+            </div>
+            <div class="window-body outer-div">
+                <div class="badCSS">
+                    <img src="kalistaPortfolio/kalistaHeader.gif" alt="Description of your GIF" style="max-width: 100%; height: auto;">
+
+                    <h3 style=" text-align: center; font-family: Papyrus; ">Hello and welcome to my portfolio</h3>
+                    <h4 style=" text-align: center; font-family: Comic sans MS; ">A little about me. I am</h4>
+                    <ol style="font-family: Courier New, Courier, monospace;">
+                        <li>A very serious web developer</li>
+                        <li>A creative technologist</li>
+                        <li>A lesbian (yay!)</li>
+                        <li>A communications minor</li>
+                    </ol>
+                    <h5 style=" text-align: center; ">This site is a love letter to the old internet</h5>
+                    <h5 style=" text-align: center; ">Click on the icons to see different aspects of my portfolio</h5>
+                    <button onclick="playHonk()" class="plzcenter" style="margin-top:10px;">Click this for more!</button>
+                    <audio id="honk-audio">
+                        <source src="kalistaPortfolio/honk.mp3" type="audio/mpeg">
+                        <source src="kalistaPortfolio/honk.ogg" type="audio/ogg">
+
+                    </audio>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

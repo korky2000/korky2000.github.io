@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>kalista's portfolio</title>
+    <meta charset="UTF-8" />
+
+    <!-- Windows XP Theme (include only one theme at a time) -->
+    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
+
+    <style>
+        a:active {
+            box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5); /* Add a drop shadow effect */
+        }
+        .my-div {
+            text-align: center;
+        }
+
+        .my-button {
+            display: block;
+            margin: 20px auto;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+        }
+        .containerShop {
+            text-align: center;
+        }
+
+        
+        .shopButton {
+            display: block;
+            margin: 20px auto 0;
+        }
+        .right {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        #openingWindow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .plzcenter {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .outer-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .badCSS {
+            background-color: black;
+            width: 500px;
+            height: 450px;
+            color: white;
+        }
+
+        body {
+            background-image: url("kalistaPortfolio/backgroundImage.jpeg");
+        }
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* align the items to the left */
+            align-items: center;
+            margin: 10px 0;
+        }
+
+            .column img {
+                margin: 5px; /* to add some spacing between images */
+                max-width: 100%; /* to ensure that images are not stretched beyond their original dimensions */
+                height: auto; /* to preserve the aspect ratio of the images */
+            }
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start; /* align the items to the left */
+            align-items: center;
+            margin: 10px 0;
+        }
+    </style>
+    <script>
+        function playHonk() {
+            var honkAudio = document.getElementById("honk-audio");
+            honkAudio.play();
+            alert("You got honked bucko!");
+        }</script>
+
+</head>
+
+<body>
+    <div class="image-grid">
+        <div class="column">
+
+
+            <a href="kalistaPortfolio/kalistaPortfolioFix.pdf" target="_blank">
+
+                <img src="kalistaPortfolio/crtPortfolioIcon.png" style="width:70px;height:70px;">
+            </a>
+            <a href="https://www.youtube.com/watch?v=xXeW-JE7iLA&t=1296s" target="_blank">
+                <img src="kalistaPortfolio/tierItUp.png" style="width:70px;height:70px;">
+            </a>
+            <a href="kalistaPortfolio/resume.pdf" target="_blank">
+
+                <img src="kalistaPortfolio/resume.png" style="width:70px;height:70px;">
+            </a>
+
+            <a href="kalistaPortfolio/aboutMe.html" target="_blank">
+
+                <img src="kalistaPortfolio/aboutMe.png" style="width:70px;height:70px;">
+            </a>
+            <a href="kalistaPortfolio/cosplAIDDocumentation.pdf" target="_blank">
+                <img src="kalistaPortfolio/research.png" style="width:70px;height:70px;">
+            </a>
+
+            <a href="https://www.thingiverse.com/korky2000/designs" target="_blank">
+                <img src="kalistaPortfolio/thingiverse.png" style="width:70px;height:70px;">
+            </a>
+        </div>
+        <div class="column">
+
+            <a href="https://github.com/korky2000" target="_blank">
+
+                <img src="kalistaPortfolio/github.png" style="width:70px;height:70px;">
+            </a>
+            <a href="https://drive.google.com/drive/folders/1Rqam1oPPkSYgGM5q4qJdwI3-8GbskUDm?usp=sharing" target="_blank">
+                <img src="kalistaPortfolio/speeches.png" style="width:70px;height:70px;">
+            </a>
+            <a href="https://drive.google.com/drive/folders/1KLqlyCkGZbk8T4op4nDlvjNpTIFV-9vy?usp=sharing" target="_blank">
+
+                <img src="kalistaPortfolio/scripts.png" style="width:70px;height:70px;">
+            </a>
+
+            <a href="https://drive.google.com/file/d/1pRGoXZm1DFHojWKvaN60QeQ_iweK8DG9/view?usp=share_link" target="_blank">
+                <img src="kalistaPortfolio/shortFilm.png" style="width:70px;height:70px;">
+            </a>
+            <a href="https://www.youtube.com/watch?v=XWrV_W__vXc" target="_blank">
+                <img src="kalistaPortfolio/symposium.png" style="width:70px;height:70px;">
+            </a>
+
+            <a href="https://socialblade.com/instagram/user/bc_listen" target="_blank">
+                <img src="kalistaPortfolio/socialMedia.png" style="width:70px;height:70px;">
+            </a>
+        </div>
+    </div>
+    <div class="window" id="openingWindow" style="margin: 32px; width: 550px; height:500px;">
+        <div class="title-bar">
+            <div class="title-bar-text">
+                kalista.exe
+            </div>
+        </div>
+        <div class="window-body outer-div">
+            <div class="badCSS">
+                <img src="kalistaPortfolio/kalistaHeader.gif" alt="Description of your GIF" style="max-width: 100%; height: auto;">
+
+                <h3 style=" text-align: center; font-family: Papyrus; ">Hello and welcome to my portfolio</h3>
+                <h4 style=" text-align: center; font-family: Comic sans MS; ">What is this?</h4>
+                <ol style="font-family: Courier New, Courier, monospace;">
+                    <li>A portfolio for my Communications capstone (shout out Hope)</li>
+                    <li>A fun creative project</li>
+                    <li>A love letter to WindowsXP and web 1.0</li>
+                    <li>A portfolio to hold my work from Berry College</li>
+                </ol>
+                <h4 style=" text-align: center; ">Click on the icons to see different aspects of my portfolio</h4>
+                <button onclick="playHonk()" class="plzcenter" style="margin-top:10px;">Click this for more!</button>
+                <audio id="honk-audio">
+                    <source src="kalistaPortfolio/honk.mp3" type="audio/mpeg">
+                    <source src="kalistaPortfolio/honk.ogg" type="audio/ogg">
+
+                </audio>
+                </br>
+                <button onclick="window.location.href='kalistaPortfolio/CreativeTechReflection.pdf', '_blank' " class="my-button">Reflection Paper</button>
+
+            </div>
+        </div>
+    </div>
+    <div class="window right" style="margin: 32px; width: 350px; height:500px;">
+        <div class="title-bar">
+            <div class="title-bar-text">
+                currentProject.jpeg
+            </div>
+        </div>
+        <div class="window-body outer-div containerShop">
+            <div class="my-div">
+                <img src="kalistaPortfolio/ad1.png" alt="Example Image" style="width:300px;height:350px;">
+                <button onclick="window.location.href='https://www.etsy.com/listing/1403019297/make-america-girl-boss-again-sweatshirt?click_key=977763948e16ef60eab7090f71fff6448e729971%3A1403019297&click_sum=032a86db&ref=shop_home_active_4&frs=1', '_blank' " class="my-button" >Buy a Girl Boss Sweatshirt Now!</button>
+
+            </div>
+       
+        </div>
+        </div>
+</body>
+</html>
