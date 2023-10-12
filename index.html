@@ -96,15 +96,41 @@
             align-items: center;
             margin: 10px 0;
         }
-@media (max-width: 768px) {
-    .window {
-        width: 90%;
-    }
+ @media (min-width: 769px) {
+            .window.right {
+                display: none; /* Hide the 'currentProjects.txt' window */
+            }
+        }
 
-    .column {
-        width: 90%;
-    }
-}
+        /* Mobile styles (for screens up to 768px) */
+        @media (max-width: 768px) {
+            .window.right {
+                display: block; /* Display the 'currentProjects.txt' window */
+            }
+
+            .window#openingWindow {
+                display: none; /* Hide the 'kalista.exe' window */
+            }
+
+            .image-grid {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 20px;
+            }
+
+            .column {
+                width: 45%;
+                margin: 10px;
+                text-align: center;
+            }
+
+            .column img {
+                width: 70px;
+                height: 70px;
+                margin-bottom: 10px;
+            }
+        }
     </style>
     <script>
         function playHonk() {
