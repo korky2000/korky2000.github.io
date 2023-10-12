@@ -203,6 +203,8 @@
                 kalista.exe
             </div>
         </div>
+        <div class="window" id="openingWindow" draggable="true" style="margin: 32px; width: 550px; height:500px;">
+
         <div class="window-body outer-div">
             <div class="badCSS">
                 <img src="https://raw.githubusercontent.com/korky2000/korky2000.github.io/main/kalistaHeader.gif" alt="Description of your GIF" style="max-width: 100%; height: auto;">
@@ -227,6 +229,10 @@
             </div>
         </div>
     </div>
+    </div>
+</div>
+    <div class="window" id="openingWindow" draggable="true" style="margin: 32px; width: 550px; height:500px;">
+
     <div class="window right" style="margin: 32px; width: 350px; height:500px;">
         <div class="title-bar">
             <div class="title-bar-text">
@@ -247,8 +253,125 @@
                
 
             </div>
+        </div>
        
         </div>
         </div>
 </body>
+    <script>
+        const openingWindow = document.getElementById('openingWindow');
+const currentProjectsWindow = document.getElementById('currentProjectsWindow');
+
+let offsetX, offsetY, isDragging = false;
+
+// Function to handle the drag start event
+function handleDragStart(event) {
+    // Store the initial position of the mouse pointer relative to the div
+    offsetX = event.clientX - openingWindow.getBoundingClientRect().left;
+    offsetY = event.clientY - openingWindow.getBoundingClientRect().top;
+    isDragging = true;
+}
+
+// Function to handle the drag end event
+function handleDragEnd() {
+    // Reset the dragging flag when the drag operation ends
+    isDragging = false;
+}
+
+// Function to handle the drag over event
+function handleDragOver(event) {
+    // Prevent default behavior to allow dropping
+    event.preventDefault();
+}
+
+// Function to handle the drop event
+function handleDrop(event) {
+    // Prevent default behavior to allow dropping
+    event.preventDefault();
+
+    // Calculate the new position of the div based on the drop coordinates
+    const x = event.clientX - offsetX;
+    const y = event.clientY - offsetY;
+
+    // Set the new position of the div
+    openingWindow.style.left = x + 'px';
+    openingWindow.style.top = y + 'px';
+}
+
+// Add event listeners to enable drag and drop functionality
+openingWindow.addEventListener('dragstart', handleDragStart);
+openingWindow.addEventListener('dragend', handleDragEnd);
+openingWindow.addEventListener('dragover', handleDragOver);
+openingWindow.addEventListener('drop', handleDrop);
+
+// Get the draggable elements by their IDs
+const openingWindow = document.getElementById('openingWindow');
+const currentProjectsWindow = document.getElementById('currentProjectsWindow');
+
+let offsetXOpening, offsetYOpening, offsetXProjects, offsetYProjects, isDraggingOpening = false, isDraggingProjects = false;
+
+// Function to handle the drag start event for openingWindow
+function handleOpeningDragStart(event) {
+    offsetXOpening = event.clientX - openingWindow.getBoundingClientRect().left;
+    offsetYOpening = event.clientY - openingWindow.getBoundingClientRect().top;
+    isDraggingOpening = true;
+}
+
+// Function to handle the drag start event for currentProjectsWindow
+function handleProjectsDragStart(event) {
+    offsetXProjects = event.clientX - currentProjectsWindow.getBoundingClientRect().left;
+    offsetYProjects = event.clientY - currentProjectsWindow.getBoundingClientRect().top;
+    isDraggingProjects = true;
+}
+
+// Function to handle the drag end event for openingWindow
+function handleOpeningDragEnd() {
+    isDraggingOpening = false;
+}
+
+// Function to handle the drag end event for currentProjectsWindow
+function handleProjectsDragEnd() {
+    isDraggingProjects = false;
+}
+
+// Function to handle the drag over event for both windows
+function handleDragOver(event) {
+    event.preventDefault();
+}
+
+// Function to handle the drop event for openingWindow
+function handleOpeningDrop(event) {
+    event.preventDefault();
+    if (isDraggingOpening) {
+        const x = event.clientX - offsetXOpening;
+        const y = event.clientY - offsetYOpening;
+        openingWindow.style.left = x + 'px';
+        openingWindow.style.top = y + 'px';
+    }
+}
+
+// Function to handle the drop event for currentProjectsWindow
+function handleProjectsDrop(event) {
+    event.preventDefault();
+    if (isDraggingProjects) {
+        const x = event.clientX - offsetXProjects;
+        const y = event.clientY - offsetYProjects;
+        currentProjectsWindow.style.left = x + 'px';
+        currentProjectsWindow.style.top = y + 'px';
+    }
+}
+
+// Add event listeners to enable drag and drop functionality for openingWindow
+openingWindow.addEventListener('dragstart', handleOpeningDragStart);
+openingWindow.addEventListener('dragend', handleOpeningDragEnd);
+openingWindow.addEventListener('dragover', handleDragOver);
+openingWindow.addEventListener('drop', handleOpeningDrop);
+
+// Add event listeners to enable drag and drop functionality for currentProjectsWindow
+currentProjectsWindow.addEventListener('dragstart', handleProjectsDragStart);
+currentProjectsWindow.addEventListener('dragend', handleProjectsDragEnd);
+currentProjectsWindow.addEventListener('dragover', handleDragOver);
+currentProjectsWindow.addEventListener('drop', handleProjectsDrop);
+
+    </script>
 </html>
