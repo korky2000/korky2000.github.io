@@ -96,35 +96,58 @@
             align-items: center;
             margin: 10px 0;
         }
-    @media (min-width: 769px) {
-            .window#openingWindow, .window.right {
-                display: block; /* Show the 'kalista.exe' and 'currentProjects.txt' windows */
-            }
-            .image-grid {
-                display: none; /* Hide the icon grid on desktop */
-            }
-        }
-        /* Mobile styles (for screens up to 768px) */
-        @media (max-width: 768px) {
-            .window#openingWindow, .window.right {
-                display: none; /* Hide the 'kalista.exe' and 'currentProjects.txt' windows on mobile */
-            }
-            .image-grid {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                margin-top: 20px;
-            }
-            .column {
-                width: 50%; /* Set each column to take 50% width */
-                text-align: center;
-            }
-            .column img {
-                width: 100px;
-                height: 100px;
-                margin: 10px; /* Add margin between images */
-            }
-        }
+   @media (min-width: 769px) {
+    .window#openingWindow, .window.right {
+        display: block; /* Show the 'kalista.exe' and 'currentProjects.txt' windows */
+    }
+
+    .image-grid {
+        display: flex;
+        flex-wrap: wrap; /* Wrap the icons into multiple lines if they exceed container width */
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .column img {
+        margin: 5px;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Mobile styles (for screens up to 768px) */
+@media (max-width: 768px) {
+    .window#openingWindow, .window.right {
+        display: none; /* Hide the 'kalista.exe' and 'currentProjects.txt' windows on mobile */
+    }
+
+    .image-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .column {
+        width: 50%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .column img {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+}
     </style>
     <script>
         function playHonk() {
