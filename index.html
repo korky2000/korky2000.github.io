@@ -3,6 +3,8 @@
 <head>
     <title>kalista's portfolio</title>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
     <!-- Windows XP Theme (include only one theme at a time) -->
     <link rel="stylesheet" href="https://unpkg.com/xp.css" />
@@ -91,6 +93,64 @@
             align-items: center;
             margin: 10px 0;
         }
+
+        @media (max-width: 768px) {
+    body {
+        background-size: cover;
+    }
+
+    .image-grid {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .window {
+        width: 90%;
+        margin: 16px auto;
+    }
+
+    .badCSS {
+        width: 90%;
+        height: 350px;
+    }
+
+    .my-div {
+        margin: 10px;
+    }
+
+    .my-button,
+    .shopButton {
+        margin: 10px auto;
+    }
+
+    .outer-div {
+        flex-direction: column;
+    }
+
+    .containerShop {
+        text-align: center;
+    }
+
+    .right {
+        position: static;
+    }
+
+    .plzcenter {
+        margin-top: 10px;
+    }
+
+    .title-bar-text {
+        font-size: 18px;
+    }
+
+    .window-body {
+        padding: 20px;
+    }
+}
     </style>
     <script>
         function playHonk() {
