@@ -65,12 +65,9 @@
             color: white;
         }
 
-      body {
-    background-image: url("https://raw.githubusercontent.com/korky2000/korky2000.github.io/main/backgroundImage.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-}
+        body {
+            background-image: url("kalistaPortfolio/backgroundImage.jpeg");
+        }
         .image-grid {
             display: flex;
             flex-wrap: wrap;
@@ -96,33 +93,30 @@
             align-items: center;
             margin: 10px 0;
         }
-/* Desktop styles (for screens wider than 768px) */
-@media (min-width: 769px) {
-    .window#openingWindow, .window.right {
-        display: block; /* Show the 'kalista.exe' and 'currentProjects.txt' windows on desktop */
-    }
+        @media (max-width: 768px) {
+            .window#openingWindow, .window.right {
+                display: none; /* Hide the 'kalista.exe' and 'currentProjects.txt' windows on mobile */
+            }
 
-    .image-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 20px;
-    }
+            .image-grid {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 20px;
+            }
 
-    .column {
-        width: 50%; /* Set each column to take 50% width */
-        text-align: center;
-    }
+            .column {
+                width: 50%; /* Set each column to take 50% width */
+                text-align: center;
+                margin: 10px;
+            }
 
-    .column img {
-        width: 100px;
-        height: 100px;
-        margin: 10px;
-    }
-}
-
-/* Mobile styles (for screens up to 768px) */
-
+                .column img {
+                    width: 100px;
+                    height: 100px;
+                    margin: 10px;
+                }
+        } 
 
 
     </style>
